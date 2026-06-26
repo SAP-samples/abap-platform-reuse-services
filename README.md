@@ -86,7 +86,7 @@ The demo uses a very simple PDF template 'ZREUSEUI_SALESORDER_002_ADS' with a fo
 
 ## Download and Installation
 
-Create a package, e.g. **'ZREUSE_SERVICES_002'** and link this package with the URL of this repository.
+Create a package, e.g. **'ZREUSE_SERVICES_002'** and link this package with the URL of this repository. Open the app "Manage Number Range Intervals" in the Fiori Launchpad of your ABAP Environment and create internal interval 01 for Number Range Object ZREUSES002. Publish the Service Binding ZREUSEUI_SALESOR_O4_002 and open the Preview.
 
 ## Known Issues
 <!-- You may simply state "No known issues. -->
