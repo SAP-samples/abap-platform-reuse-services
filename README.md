@@ -62,8 +62,7 @@ The display of changes is done using a custom entity 'ZREUSEI_CDREDADD_002' that
 4. Create a second item
 5. Press "Create" to create the SalesOrder
 6. Press the "Create PDF" button, the description changes to "PDF generation started" and wait a few seconds
-7. Refresh the browser
-8. Description changes to "success" and a PDF is show as an attachement that contains the salesorder data
+7. Description changes to "success" and a PDF is show as an attachement that contains the salesorder data
 
 <img src="images/adobe_forms_010.png" alt="pdf created" width="100%">  
 
