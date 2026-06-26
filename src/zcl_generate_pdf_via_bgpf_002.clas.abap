@@ -99,7 +99,11 @@ CLASS ZCL_GENERATE_PDF_VIA_BGPF_002 IMPLEMENTATION.
       FAILED DATA(failed_commit)
       REPORTED DATA(reported_commit).
 
-    DATA(a) = 1.
+   " Raise Event
+   DATA(ptab) = VALUE abap_parmbind_tab( ( name = 'I_SALESORDERID' kind = cl_abap_objectdescr=>exporting value = REF #( salesorder-SalesorderID ) ) ).
+   CALL METHOD ('\PROGRAM=ZREUSEBP_R_SALESORDERTP_002===CP\CLASS=LC_SALESORDER_EVENT')=>raise_event_pdf_created PARAMETER-TABLE ptab.
+
+   DATA(a) = 1.
 
   ENDMETHOD.
 ENDCLASS.

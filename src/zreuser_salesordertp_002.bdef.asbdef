@@ -50,6 +50,13 @@ late numbering
 
   internal action recalcTotalPrice;
 
+  event PDFCreated for side effects;
+
+  side effects
+  {
+    event PDFCreated affects field ( Description, Attachment, FileName, MimeType );
+  }
+
   mapping for zreuse_head_002 control zreuse_head_x_002 corresponding
     {
       SalesorderID       = SALESORDER_ID;

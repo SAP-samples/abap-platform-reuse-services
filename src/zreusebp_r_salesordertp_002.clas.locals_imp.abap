@@ -411,3 +411,16 @@ CLASS lsc_salesorder_s IMPLEMENTATION.
   ENDMETHOD.
 
 ENDCLASS.
+
+CLASS lc_salesorder_event DEFINITION FINAL.
+ PUBLIC SECTION.
+   CLASS-METHODS raise_event_pdf_created IMPORTING i_salesorderid type zreuse_salesorder_id_002 .
+ENDCLASS.
+
+CLASS lc_salesorder_event IMPLEMENTATION.
+
+  METHOD raise_event_pdf_created.
+    RAISE ENTITY EVENT ZREUSER_SalesOrderTP_002~PDFCreated FROM VALUE #( ( salesorderid = i_salesorderid ) ).
+  ENDMETHOD.
+
+ENDCLASS.

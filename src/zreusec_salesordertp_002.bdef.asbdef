@@ -19,6 +19,8 @@ use etag
 
   use action createPDF;
 
+  use event PDFCreated;
+
   use association _Item { create; with draft; }
 }
 
